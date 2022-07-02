@@ -8,10 +8,24 @@ import Generator from "./Pages/Generator";
 import Gradients from "./Pages/Gradients";
 import NoMatch from "./Pages/NoMatch";
 
-function App() {
+type gradientsdata = {
+  from: string
+  via?: string
+  to: string
+  title: string
+  isFavourite: boolean
+  id: number
+}
 
-  const { SettingThingsUp } = useContext(ColorsContext)
-  SettingThingsUp()
+interface ColorContextValues {
+  colors: gradientsdata[],
+  favourites: gradientsdata[],
+  handleFavouriteChange: Function
+}
+
+function App() {
+  const ColorContext = useContext(ColorsContext) as ColorContextValues
+  
   return (
     <Fragment>
       <Navbar />
