@@ -1,10 +1,11 @@
 // Navbar Component
+import React from "react";
 
-function Navbar() {
+const Navbar = () => {
     return (
-        <div>
-            
-        </div>
+    <header>
+        Navbar
+    </header>
     )
 }
 
