@@ -1,7 +1,8 @@
-import { Fragment, useContext } from "react"
+import { Fragment, MouseEventHandler, useContext } from "react"
 import { Route, Routes } from "react-router-dom"
 import Navbar from "./Components/Navbar";
 import { ColorsContext } from "./Contexts/ColorsContext";
+import { NavbarContext } from "./Contexts/NavbarContext";
 import Favourites from "./Pages/Favourites";
 import Flags from "./Pages/Flags";
 import Generator from "./Pages/Generator";
@@ -23,19 +24,27 @@ interface ColorContextValues {
   handleFavouriteChange: Function
 }
 
+interface NavbarContextValuesType {
+  isNavbarOpen: boolean
+  isHamburgerShow: boolean
+}
+
 function App() {
+  const { isNavbarOpen, isHamburgerShow } = useContext(NavbarContext) as NavbarContextValuesType
   const ColorContext = useContext(ColorsContext) as ColorContextValues
-  
+
   return (
     <Fragment>
       <Navbar />
-      <Routes>
-        <Route element={<Gradients />} index />
-        <Route element={<Favourites />} path="/favourites" />
-        <Route element={<Generator />} path="/generator" />
-        <Route element={<Flags />} path="/flags" />
-        <Route element={<NoMatch />} path="*" />
-      </Routes>
+      <div className={ isNavbarOpen ? isHamburgerShow ? "mt-14 w-full blur-[1px]" : "mt-14 w-full" : "mt-14 w-full" }>
+        <Routes>
+          <Route element={<Gradients />} index />
+          <Route element={<Favourites />} path="/favourites" />
+          <Route element={<Generator />} path="/generator" />
+          <Route element={<Flags />} path="/flags" />
+          <Route element={<NoMatch />} path="*" />
+        </Routes>
+      </div>
     </Fragment>
   )
 }

@@ -1,5 +1,5 @@
 // Colors Context
-import { ReactElement, createContext, useState, useEffect } from "react";  
+import { ReactElement, createContext, useState, useEffect } from "react";
 
 interface colorsproviderprops {
     children: ReactElement
@@ -31,16 +31,16 @@ function ColorsContextProvider(props: colorsproviderprops) {
     const [favourites, setFavourites] = useState([...JSON.parse(localStorage.getItem('gradientsFavourite')!)])
 
     const handleFavouriteChange = (id: number) => {
-        colors[id-1].isFavourite = !colors[id-1].isFavourite
+        colors[id - 1].isFavourite = !colors[id - 1].isFavourite
         localStorage.setItem('gradients', JSON.stringify(colors))
-        
-        if(!favourites.find(v => v.id === id)) {
+
+        if (!favourites.find(v => v.id === id)) {
             setFavourites(prev => {
-                return [...prev, colors[id-1]]
+                return [...prev, colors[id - 1]]
             })
             localStorage.setItem('gradientsFavourite', JSON.stringify(favourites))
         }
-    }    
+    }
 
     const ContextValues: ContextValuesType = {
         colors,
@@ -49,8 +49,8 @@ function ColorsContextProvider(props: colorsproviderprops) {
     }
 
     return (
-        <ColorsContext.Provider value={ ContextValues } >
-            { props.children }
+        <ColorsContext.Provider value={ContextValues} >
+            {props.children}
         </ColorsContext.Provider>
     )
 }
