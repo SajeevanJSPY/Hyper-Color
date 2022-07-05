@@ -35,7 +35,7 @@ const Navbar = () => {
                         <NavLink to="generator" className={({ isActive }) => isActive ? 'text-cyan-400 text-xl text-bold' : 'text-white text-xl text-bold'} >Generator</NavLink>
                         <NavLink to="favourites" className={({ isActive }) => isActive ? 'text-cyan-400 text-xl text-bold' : 'text-white text-xl text-bold'} >Favourites</NavLink>
                         <NavLink to="flags" className={({ isActive }) => isActive ? 'text-cyan-400 text-xl text-bold' : 'text-white text-xl text-bold'} >Flags</NavLink>
-                        <div className="flex items-center gap-2 ml-6">
+                        <div className="flex items-center gap-3 mx-8">
                             <NavLink to="generator" className="text-white text-xl text-bold" >Github</NavLink>
                             <NavLink to="generator" className="text-white text-xl text-bold" >LinkedIn</NavLink>
                             <NavLink to="generator" className="text-white text-xl text-bold" >Twitter</NavLink>

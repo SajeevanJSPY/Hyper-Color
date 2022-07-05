@@ -25,13 +25,17 @@ export const ColorsContext = createContext({})
 function ColorsContextProvider(props: colorsproviderprops) {
 
     // All Gradients Colors
-    const colors = [...JSON.parse(localStorage.getItem('gradients')!)]
+    const [colors, setColors] = useState([...JSON.parse(localStorage.getItem('gradients')!)])
 
     // Favourites
     const [favourites, setFavourites] = useState([...JSON.parse(localStorage.getItem('gradientsFavourite')!)])
 
     const handleFavouriteChange = (id: number) => {
         colors[id - 1].isFavourite = !colors[id - 1].isFavourite
+        setColors(prev => {
+            return [...prev]
+        })
+        
         localStorage.setItem('gradients', JSON.stringify(colors))
 
         if (!favourites.find(v => v.id === id)) {

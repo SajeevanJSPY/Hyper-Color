@@ -1,8 +1,9 @@
-import { Fragment, MouseEventHandler, useContext } from "react"
+import { Fragment, useContext } from "react"
 import { Route, Routes } from "react-router-dom"
-import Navbar from "./Components/Navbar";
+
 import { ColorsContext } from "./Contexts/ColorsContext";
 import { NavbarContext } from "./Contexts/NavbarContext";
+import Navbar from "./Components/Navbar";
 import Favourites from "./Pages/Favourites";
 import Flags from "./Pages/Flags";
 import Generator from "./Pages/Generator";
