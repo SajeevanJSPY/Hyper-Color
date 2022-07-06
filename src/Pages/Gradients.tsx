@@ -23,7 +23,7 @@ function Gradients() {
     
     return (
         <div className="flex flex-col gap-y-24 gap-x-6 lg:grid lg:grid-cols-2 xl:grid-cols-3 lg:justify-between mt-14">
-            { colors.map(v => <Gradient key={v.id} { ...v } />) }
+            { colors.length !== 0 ? colors.map(v => <Gradient key={v.id} { ...v } />) : '' }
         </div>
     )
 }
