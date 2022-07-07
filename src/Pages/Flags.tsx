@@ -1,8 +1,20 @@
 // Flags Component
+import { Fragment } from "react";
+import Heading from "../Components/Heading";
 
 function Flags() {
+
+    const headingProps = {
+        title: "World Flags",
+        superTitle: "Flag Gradients with Tailwind CSS",
+        content: "A collection of country flags created with Tailwind CSS."
+    }
+
     return (
-        <h1>Hello World From Favourites Component</h1>
+        <Fragment>
+            <Heading { ...headingProps } />
+
+        </Fragment>
     )
 }
 
