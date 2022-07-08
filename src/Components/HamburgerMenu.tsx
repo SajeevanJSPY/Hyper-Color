@@ -2,6 +2,13 @@
 import { MouseEventHandler, useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { NavbarContext } from "../Contexts/NavbarContext";
+import { github, twitter, linkedIn } from "../assests/IconsAssests"
+
+const ACCOUNTS = {
+    github: "https://github.com/SajeevanJSPY",
+    linkedIn: "https://www.linkedin.com/in/sajeevan-jspy-65a0a0244",
+    twitter: "https://twitter.com/Sajeevanjspy?t=rHJOYf046WQwaRJhumfgpg&s=09"
+}
 
 interface NavbarContextValuesType {
     isNavbarOpen: boolean
@@ -22,10 +29,10 @@ const HambBurgerMenu = () => {
             <NavLink onClick={NavbarStateChange} to="flags" className={({ isActive }) => isActive ? 'text-cyan-400' : 'text-white'}>
                 Flags
             </NavLink>
-            <div className="flex gap-8">
-                <div className="cursor-pointer">Github</div>
-                <div className="cursor-pointer">LinkedIn</div>
-                <div className="cursor-pointer">Twitter</div>
+            <div className="flex gap-8 mt-2">
+                <NavLink target="_blank" to={ACCOUNTS.github} className="group cursor-pointer" >{github}</NavLink>
+                <NavLink target="_blank" to={ACCOUNTS.linkedIn} className="group text-white text-xl text-bold" >{linkedIn}</NavLink>
+                <NavLink target="_blank" to={ACCOUNTS.twitter} className="group text-white text-xl text-bold" >{twitter}</NavLink>
             </div>
         </div>
     )
