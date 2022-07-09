@@ -1,5 +1,5 @@
 // Gradient Component
-import { useContext, useState } from "react";
+import { SyntheticEvent, useContext, useState } from "react";
 import { ColorsContext } from "../Contexts/ColorsContext";
 import GradientControl from "./GradientControl";
 
@@ -25,14 +25,33 @@ const Gradient = ({ from, via, to, title, isFavourite, id }: gradientsdata) => {
     const settingDirection = (direction: string) => {
         setDirection(direction);
     }
+
+    const tailwindCode = (e: SyntheticEvent) => {
+        const code = `${direction} from-${from}${via ? ' via-' + via : ''} to-${to}`
+        navigator.clipboard.writeText(code)       
+    }
+
+    const cssCode = (e: SyntheticEvent) => {
+        const ele = e.target as HTMLElement
+        const mainEle = ele.parentElement?.parentElement?.parentElement?.parentElement?.parentElement
+        const computedValue = window.getComputedStyle(mainEle as HTMLElement).backgroundImage
+        window.navigator.clipboard.writeText(computedValue)
+    }
+
     // default Style
     const defaultStyle = "container flex items-start justify-center relative mx-auto w-[95%] max-w-[500px] mt-4 mb-4 rounded-2xl h-64";
-    const style = `${defaultStyle} ${direction} from-${from} ${via ? "via" + via : ''} to-${to}`;
+    const style = `${defaultStyle} ${direction} from-${from}${via ? ' via-' + via : ''} to-${to}`;
 
+    const GradientControlProps = {
+        settingDirection,
+        title,
+        tailwindCode,
+        cssCode
+    }
     return (
         <div className={style}>
 
-            <GradientControl settingDirection={settingDirection} title={title} />
+            <GradientControl { ...GradientControlProps } />
             <div onClick={e => {
                 e.preventDefault();
                 handleFavouriteChange(id);

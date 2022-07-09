@@ -27,7 +27,6 @@ function Favourites() {
         superTitle: "Your Favourite Hypercolor Gradients",
         content: "Easily view all your favourite Hypercolor gradients for quick access to their Tailwind CSS classes, CSS code and image download."
     }
-
     return (
         <Fragment>
             <Heading {...headingProps} />
