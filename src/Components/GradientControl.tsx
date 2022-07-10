@@ -4,17 +4,27 @@ import { useRef, useCallback, MouseEventHandler } from "react"
 import { toJpeg } from "html-to-image"
 import GradientIcons from "./GradientIcons";
 import { tailwindCSS, image, code } from "../assests/IconsAssests"
+import CreateToast from "../Components/Toast"
 
 type gradientscontroltype = {
     settingDirection: Function
     title: string
     tailwindCode: MouseEventHandler
-    cssCode: MouseEventHandler
 }
 
-const GradientControl = ({ settingDirection, title, tailwindCode, cssCode }: gradientscontroltype) => {
+const GradientControl = ({ settingDirection, title, tailwindCode }: gradientscontroltype) => {
 
     const ref = useRef<HTMLDivElement>(null)
+
+    const cssCode = useCallback(() => {
+        if(ref.current === null) {
+            return 
+        }
+        const element = ref.current.parentElement as HTMLElement
+        const computedValue = window.getComputedStyle(element as HTMLElement).backgroundImage
+        window.navigator.clipboard.writeText(computedValue)
+        CreateToast('Copied To Clipboard')
+    }, [ref])
 
     const htmlToImageFn = useCallback(() => {
         if (ref.current === null) {
@@ -34,9 +44,10 @@ const GradientControl = ({ settingDirection, title, tailwindCode, cssCode }: gra
                 anchor.href = dataURL
                 anchor.download = `${title}-image.jpeg`
                 anchor.click()
+                CreateToast('Gradient Image Downloading...')
             })
-            .catch(err => {
-                console.error(err);
+            .catch(() => {
+                CreateToast('Download Unavailable')
             })
 
     }, [ref])
