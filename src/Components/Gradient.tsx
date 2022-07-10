@@ -2,7 +2,7 @@
 import { SyntheticEvent, useContext, useState } from "react";
 import { ColorsContext } from "../Contexts/ColorsContext";
 import GradientControl from "./GradientControl";
-import CreateToast from "../Components/Toast"
+import CreateToast from "../Func/Toast"
 
 type gradientsdata = {
     from: string

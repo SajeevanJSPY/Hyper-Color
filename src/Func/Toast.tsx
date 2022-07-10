@@ -1,4 +1,4 @@
-// useToast Hook
+// Toast Function
 const toastContainer = document.getElementById('toastContainer') as HTMLElement
 
 function CreateToast(content: string) {

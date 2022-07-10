@@ -1,6 +1,6 @@
 // Colors Context
 import { ReactElement, createContext, useState, useEffect } from "react";
-import CreateToast from "../Components/Toast"
+import CreateToast from "../Func/Toast"
 
 interface colorsproviderprops {
     children: ReactElement
