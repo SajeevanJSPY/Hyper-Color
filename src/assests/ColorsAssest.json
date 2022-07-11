@@ -898,5 +898,33 @@
         "bg-red-900",
         "bg-black",
         "bg-white"
+    ],
+    "directions": [
+        "bg-conic",
+        "bg-conic-to-b",
+        "bg-conic-to-bl",
+        "bg-conic-to-br",
+        "bg-conic-to-l",
+        "bg-conic-to-r",
+        "bg-conic-to-t",
+        "bg-conic-to-tl",
+        "bg-conic-to-tr",
+        "bg-gradient-to-b",
+        "bg-gradient-to-bl",
+        "bg-gradient-to-br",
+        "bg-gradient-to-l",
+        "bg-gradient-to-r",
+        "bg-gradient-to-t",
+        "bg-gradient-to-tl",
+        "bg-gradient-to-tr",
+        "bg-radial",
+        "bg-radial-at-b",
+        "bg-radial-at-bl",
+        "bg-radial-at-br",
+        "bg-radial-at-l",
+        "bg-radial-at-r",
+        "bg-radial-at-t",
+        "bg-radial-at-tl",
+        "bg-radial-at-tr"
     ]
 }

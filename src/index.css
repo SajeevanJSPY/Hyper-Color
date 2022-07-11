@@ -16,7 +16,6 @@ body {
   background-color: rgba(0, 0, 20, 0.95);
 }
 
-
 /* Stops */
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
@@ -48,6 +47,77 @@ body {
 
 .bg-gradient-to-bl {
   background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
+}
+
+.bg-conic {
+  background-image: conic-gradient(var(--tw-gradient-stops));
+}
+
+.bg-conic-to-t {
+  background-image: conic-gradient(at top, var(--tw-gradient-stops));
+}
+
+.bg-conic-to-b {
+  background-image: conic-gradient(at bottom, var(--tw-gradient-stops));
+}
+
+.bg-conic-to-l {
+  background-image: conic-gradient(at left, var(--tw-gradient-stops));
+}
+
+.bg-conic-to-r {
+  background-image: conic-gradient(at right, var(--tw-gradient-stops));
+}
+
+.bg-conic-to-tl {
+  background-image: conic-gradient(at top left, var(--tw-gradient-stops));
+}
+
+.bg-conic-to-tr {
+  background-image: conic-gradient(at top right, var(--tw-gradient-stops));
+}
+
+.bg-conic-to-bl {
+  background-image: conic-gradient(at bottom left, var(--tw-gradient-stops));
+}
+
+.bg-conic-to-br {
+  background-image: conic-gradient(at bottom right, var(--tw-gradient-stops));
+}
+.bg-radial {
+  background-image: radial-gradient(ellipse at center, var(--tw-gradient-stops));
+}
+
+.bg-radial-at-t {
+  background-image: radial-gradient(ellipse at top, var(--tw-gradient-stops));
+}
+
+.bg-radial-at-b {
+  background-image: radial-gradient(ellipse at bottom, var(--tw-gradient-stops));
+}
+
+.bg-radial-at-l {
+  background-image: radial-gradient(ellipse at left, var(--tw-gradient-stops));
+}
+
+.bg-radial-at-r {
+  background-image: radial-gradient(ellipse at right, var(--tw-gradient-stops));
+}
+
+.bg-radial-at-tl {
+  background-image: radial-gradient(ellipse at top left, var(--tw-gradient-stops));
+}
+
+.bg-radial-at-tr {
+  background-image: radial-gradient(ellipse at top right, var(--tw-gradient-stops));
+}
+
+.bg-radial-at-bl {
+  background-image: radial-gradient(ellipse at bottom left, var(--tw-gradient-stops));
+}
+
+.bg-radial-at-br {
+  background-image: radial-gradient(ellipse at bottom right, var(--tw-gradient-stops));
 }
 
 /* From Stop */
