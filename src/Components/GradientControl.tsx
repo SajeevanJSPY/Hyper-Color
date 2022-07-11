@@ -10,9 +10,10 @@ type gradientscontroltype = {
     settingDirection: Function
     title: string
     tailwindCode: MouseEventHandler
+    gradientType: string
 }
 
-const GradientControl = ({ settingDirection, title, tailwindCode }: gradientscontroltype) => {
+const GradientControl = ({ settingDirection, title, tailwindCode, gradientType }: gradientscontroltype) => {
 
     const ref = useRef<HTMLDivElement>(null)
     const CSSCodeFn = useCSSCode(ref)
@@ -30,7 +31,7 @@ const GradientControl = ({ settingDirection, title, tailwindCode }: gradientscon
                     <div onClick={() => DownloadImageFn()} className="cursor-pointer group bg-[rgba(255,255,255,0.1)] p-[7px] rounded-xl">{image}</div>
                 </div>
             </header>
-            <GradientIcons settingDirection={settingDirection} />
+            <GradientIcons gradientType={gradientType} settingDirection={settingDirection} />
         </div>
     )
 }

@@ -1,68 +1,613 @@
-{ 
+{
     "gradients": [
-        { "from": "pink-500", "via": "red-500", "to": "yellow-500", "title":"Hyper", "isFavourite": false, "id": 1 },
-        { "from": "green-300", "via": "blue-500", "to": "purple-600", "title":"Oceanic", "isFavourite": false, "id": 2 },
-        { "from": "pink-300", "via": "purple-300", "to": "indigo-400", "title": "Cotton Candy", "isFavourite": false, "id": 3 },
-        { "from": "gray-700", "via": "gray-900", "to": "black", "title": "Gotham", "isFavourite": false, "id": 4 },
-        { "from": "indigo-200", "via": "red-200", "to": "yellow-100", "title": "Sunset", "isFavourite": false, "id": 5 },
-        { "from": "yellow-100", "via": "yellow-300", "to": "yellow-500", "title": "Mojave", "isFavourite": false, "id": 6 },
-        { "from": "yellow-200", "via": "green-200", "to": "green-500", "title": "BeachSide", "isFavourite": false, "id": 7 },
-        { "from": "gray-200", "via": "gray-400", "to": "gray-600", "title": "Gunmetal", "isFavourite": false, "id": 8 },
-        { "from": "red-200", "via": "red-300", "to": "yellow-200", "title": "Peachy", "isFavourite": false, "id": 9 },
-        { "from": "green-200", "via": "green-300", "to": "blue-500", "title": "Seafoam", "isFavourite": false, "id": 10 },
-        { "from": "yellow-200", "via": "yellow-400", "to": "yellow-700", "title": "Pumpkin", "isFavourite": false, "id": 11 },
-        { "from": "green-200", "via": "green-400", "to": "purple-700", "title": "Pandora", "isFavourite": false, "id": 12 },
-        { "from": "red-200", "to": "red-600", "title": "Valentine", "id": 13 },
-        { "from": "green-300", "via": "yellow-300", "to": "pink-300", "title": "Hawaii", "isFavourite": false, "id": 14 },
-        { "from": "indigo-300", "to": "purple-400", "title": "Lavender", "isFavourite": false, "id": 15 },
-        { "from": "green-200", "to": "green-500", "title": "Wintergreen", "isFavourite": false, "id": 16 },
-        { "from": "purple-200", "via": "purple-400", "to": "purple-800", "title": "Huckleberry", "isFavourite": false, "id": 17 },
-        { "from": "gray-400", "via": "gray-600", "to": "blue-800", "title": "Blue Steel", "isFavourite": false, "id": 18 },
-        { "from": "blue-100", "via": "blue-300", "to": "blue-500", "title": "Arendelle", "isFavourite": false, "id": 19 },
-        { "from": "green-200", "via": "green-400", "to": "green-500", "title": "Spearmint", "isFavourite": false, "id": 20 },
-        { "from": "purple-400", "to": "yellow-400", "title": "Minnesota", "isFavourite": false, "id": 21 },
-        { "from": "red-400", "via": "gray-300", "to": "blue-500", "title": "Bombpop", "isFavourite": false, "id": 22 },
-        { "from": "red-800", "via": "yellow-600", "to": "yellow-500", "title": "Acadia", "isFavourite": false, "id": 23 },
-        { "from": "yellow-200", "to": "yellow-500", "title": "Sonora", "isFavourite": false, "id": 24 },
-        { "from": "blue-300", "via": "green-200", "to": "yellow-300", "title": "Paradise", "isFavourite": false, "id": 25 },
-        { "from": "yellow-200", "via": "green-200", "to": "green-300", "title": "Sierra Mist", "isFavourite": false, "id": 26 },
-        { "from": "yellow-200", "via": "yellow-300", "to": "yellow-400", "title": "Creamsicle", "isFavourite": false, "id": 27 },
-        { "from": "blue-700", "via": "blue-800", "to": "gray-900", "title": "Midnight", "isFavourite": false, "id": 28 },
-        { "from": "green-300", "to": "purple-400", "title": "Borealis", "isFavourite": false, "id": 29 },
-        { "from": "yellow-200", "via": "pink-200", "to": "pink-400", "title": "Strawberry", "isFavourite": false, "id": 30 },
-        { "from": "pink-400", "to": "pink-600", "title": "Flamingo", "isFavourite": false, "id": 31 },
-        { "from": "yellow-600", "to": "red-600", "title": "Burnning Sunrise", "isFavourite": false, "id": 32 },
-        { "from": "green-500", "to": "green-700", "title": "Apple", "isFavourite": false, "id": 33 },
-        { "from": "red-500", "to": "green-500", "title": "Watermelon", "isFavourite": false, "id": 34 },
-        { "from": "orange-600", "to": "orange-500", "title": "Flare", "isFavourite": false, "id": 35 },
-        { "from": "lime-600", "via": "yellow-300", "to": "red-600", "title": "Rasta", "isFavourite": false, "id": 36 },
-        { "from": "rose-700", "to": "pink-600", "title": "Lust", "isFavourite": false, "id": 37 },
-        { "from": "rose-400", "via": "fuchsia-500", "to": "indigo-500", "title": "Sublime", "isFavourite": false, "id": 38 },
-        { "from": "slate-900", "via": "purple-900", "to": "slate-900", "title": "Witch", "isFavourite": false, "id": 39 },
-        { "from": "sky-400", "via": "rose-400", "to": "lime-400", "title": "Powerpuff", "isFavourite": false, "id": 40 },
-        { "from": "blue-500", "to": "blue-600", "title": "Solidblue", "isFavourite": false, "id": 41 },
-        { "from": "rose-100", "to": "teal-100", "title": "ice", "isFavourite": false, "id": 42 },
-        { "from": "sky-400", "to": "sky-200", "title": "sky", "isFavourite": false, "id": 43 },
-        { "from": "orange-500", "to": "yellow-300", "title": "Horizon", "isFavourite": false, "id": 44 },
-        { "from": "rose-400", "to": "orange-300", "title": "Morning", "isFavourite": false, "id": 45 },
-        { "from": "gray-900", "to": "gray-600", "title": "Space", "isFavourite": false, "id": 46 },
-        { "from": "teal-200", "to": "lime-200", "title": "Earth", "isFavourite": false, "id": 47 },
-        { "from": "fuchsia-500", "via": "red-600", "to": "orange-400", "isFavourite": false, "title": "Picture", "id": 48 },
-        { "from": "sky-400", "to": "blue-500", "title": "Messenger", "isFavourite": false, "id": 49 },
-        { "from": "cyan-200", "to": "cyan-400", "title": "Sea", "isFavourite": false, "id": 50 },
-        { "from": "sky-400", "to": "cyan-300", "title": "Payment", "isFavourite": false, "id": 51 },
-        { "from": "red-500", "to": "red-800", "title": "Video", "isFavourite": false, "id": 52 },
-        { "from": "rose-500", "via": "red-400", "to": "red-500", "isFavourite": false, "title": "Passion", "id": 53 },
-        { "from": "violet-300", "to": "violet-400", "title": "Flower", "isFavourite": false, "id": 54 },
-        { "from": "orange-300", "to": "rose-400", "title": "Cool Sunset", "isFavourite": false, "id": 55 },
-        { "from": "fuchsia-600", "to": "pink-600", "title": "Pink Neon", "isFavourite": false, "id": 56 },
-        { "from": "slate-500", "to": "yellow-100", "title": "Blue Sand", "isFavourite": false, "id": 57 },
-        { "from": "emerald-500", "to": "lime-600", "title": "Emerald", "isFavourite": false, "id": 58 },
-        { "from": "rose-300", "to": "rose-500", "title": "Relaxed Rose", "isFavourite": false, "id": 59 },
-        { "from": "purple-800", "via": "violet-900", "to": "purple-800", "title": "Purple Haze", "isFavourite": false, "id": 60 },
-        { "from": "gray-100", "to": "gray-300", "title": "Silver", "isFavourite": false, "id": 61 },
-        { "from": "orange-400", "to": "rose-400", "title": "Orange Coral", "isFavourite": false, "id": 62 },
-        { "from": "blue-400", "to": "emerald-400", "title": "Blue Coral", "isFavourite": false, "id": 63 },
-        { "from": "blue-400", "to": "emerald-400", "title": "Beam Of Light", "isFavourite": false, "id": 64 }
+        {
+            "colors": "from-pink-500 via-red-500 to-yellow-500",
+            "title": "Hyper",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 1
+        },
+        {
+            "colors": "from-green-300 via-blue-500 to-purple-600",
+            "title": "Oceanic",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 2
+        },
+        {
+            "colors": "from-pink-300 via-purple-300 to-indigo-400",
+            "title": "Cotton Candy",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 3
+        },
+        {
+            "colors": "from-gray-700 via-gray-900 to-black",
+            "title": "Gotham",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 4
+        },
+        {
+            "colors": "from-indigo-200 via-red-200 to-yellow-100",
+            "title": "Sunset",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 5
+        },
+        {
+            "colors": "from-yellow-100 via-yellow-300 to-yellow-500",
+            "title": "Mojave",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 6
+        },
+        {
+            "colors": "from-yellow-200 via-green-200 to-green-500",
+            "title": "BeachSide",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 7
+        },
+        {
+            "colors": "from-gray-200 via-gray-400 to-gray-600",
+            "title": "Gunmetal",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 8
+        },
+        {
+            "colors": "from-red-200 via-red-300 to-yellow-200",
+            "title": "Peachy",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 9
+        },
+        {
+            "colors": "from-green-200 via-green-300 to-blue-500",
+            "title": "Seafoam",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 10
+        },
+        {
+            "colors": "from-yellow-200 via-yellow-400 to-yellow-700",
+            "title": "Pumpkin",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 11
+        },
+        {
+            "colors": "from-green-200 via-green-400 to-purple-700",
+            "title": "Pandora",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 12
+        },
+        {
+            "colors": "from-red-200 to-red-600",
+            "title": "Valentine",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 13
+        },
+        {
+            "colors": "from-green-300 via-yellow-300 to-pink-300",
+            "title": "Hawaii",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 14
+        },
+        {
+            "colors": "from-indigo-300 to-purple-400",
+            "title": "Lavender",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 15
+        },
+        {
+            "colors": "from-green-200 to-green-500",
+            "title": "Wintergreen",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 16
+        },
+        {
+            "colors": "from-purple-200 via-purple-400 to-purple-800",
+            "title": "Huckleberry",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 17
+        },
+        {
+            "colors": "from-gray-400 via-gray-600 to-blue-800",
+            "title": "Blue Steel",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 18
+        },
+        {
+            "colors": "from-blue-100 via-blue-300 to-blue-500",
+            "title": "Arendelle",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 19
+        },
+        {
+            "colors": "from-green-200 via-green-400 to-green-500",
+            "title": "Spearmint",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 20
+        },
+        {
+            "colors": "from-purple-400 to-yellow-400",
+            "title": "Minnesota",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 21
+        },
+        {
+            "colors": "from-red-400 via-gray-300 to-blue-500",
+            "title": "Bombpop",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 22
+        },
+        {
+            "colors": "from-red-800 via-yellow-600 to-yellow-500",
+            "title": "Acadia",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 23
+        },
+        {
+            "colors": "from-yellow-200 to-yellow-500",
+            "title": "Sonora",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 24
+        },
+        {
+            "colors": "from-blue-300 via-green-200 to-yellow-300",
+            "title": "Paradise",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 25
+        },
+        {
+            "colors": "from-yellow-200 via-green-200 to-green-300",
+            "title": "Sierra Mist",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 26
+        },
+        {
+            "colors": "from-yellow-200 via-yellow-300 to-yellow-400",
+            "title": "Creamsicle",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 27
+        },
+        {
+            "colors": "from-blue-700 via-blue-800 to-gray-900",
+            "title": "Midnight",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 28
+        },
+        {
+            "colors": "from-green-300 to-purple-400",
+            "title": "Borealis",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 29
+        },
+        {
+            "colors": "from-yellow-200 via-pink-200 to-pink-400",
+            "title": "Strawberry",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 30
+        },
+        {
+            "colors": "from-pink-400 to-pink-600",
+            "title": "Flamingo",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 31
+        },
+        {
+            "colors": "from-yellow-600 to-red-600",
+            "title": "Burning Sunrise",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 32
+        },
+        {
+            "colors": "from-green-500 to-green-700",
+            "title": "Apple",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 33
+        },
+        {
+            "colors": "from-red-500 to-green-500",
+            "title": "Watermelon",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 34
+        },
+        {
+            "colors": "from-orange-600 to-orange-500",
+            "title": "Flare",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 35
+        },
+        {
+            "colors": "from-lime-600 via-yellow-300 to-red-600",
+            "title": "Rasta",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 36
+        },
+        {
+            "colors": "from-rose-700 to-pink-600",
+            "title": "Lust",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 37
+        },
+        {
+            "colors": "from-rose-400 via-fuchsia-500 to-indigo-500",
+            "title": "Sublime",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 38
+        },
+        {
+            "colors": "from-slate-900 via-purple-900 to-slate-900",
+            "title": "Witch",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 39
+        },
+        {
+            "colors": "from-sky-400 via-rose-400 to-lime-400",
+            "title": "Powerpuff",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 40
+        },
+        {
+            "colors": "from-blue-500 to-blue-600",
+            "title": "Solidblue",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 41
+        },
+        {
+            "colors": "from-rose-100 to-teal-100",
+            "title": "Ice",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 42
+        },
+        {
+            "colors": "from-sky-400 to-sky-200",
+            "title": "sky",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 43
+        },
+        {
+            "colors": "from-orange-500 to-yellow-300",
+            "title": "Horizon",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 44
+        },
+        {
+            "colors": "from-rose-400 to-orange-300",
+            "title": "Morning",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 45
+        },
+        {
+            "colors": "from-gray-900 to-gray-600",
+            "title": "Space",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 46
+        },
+        {
+            "colors": "from-teal-200 to-lime-200",
+            "title": "Earth",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 47
+        },
+        {
+            "colors": "from-fuchsia-500 via-red-600 to-orange-400",
+            "title": "Picture",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 48
+        },
+        {
+            "colors": "from-sky-400 to-blue-500",
+            "title": "Messenger",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 49
+        },
+        {
+            "colors": "from-cyan-200 to-cyan-400",
+            "title": "Sea",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 50
+        },
+        {
+            "colors": "from-sky-400 to-cyan-300",
+            "title": "Payment",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 51
+        },
+        {
+            "colors": "from-red-500 to-red-800",
+            "title": "Video",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 52
+        },
+        {
+            "colors": "from-rose-500 via-red-400 to-red-500",
+            "title": "Passion",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 53
+        },
+        {
+            "colors": "from-violet-300 to-violet-400",
+            "title": "Flower",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 54
+        },
+        {
+            "colors": "from-orange-300 to-rose-300",
+            "title": "Cool Sunset",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 55
+        },
+        {
+            "colors": "from-fuchsia-600 to-pink-600",
+            "title": "Pink Neon",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 56
+        },
+        {
+            "colors": "from-slate-500 to-yellow-100",
+            "title": "Blue Sand",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 57
+        },
+        {
+            "colors": "from-emerald-500 to-lime-600",
+            "title": "Emerald",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 58
+        },
+        {
+            "colors": "from-rose-300 to-rose-500",
+            "title": "Relaxed Rose",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 59
+        },
+        {
+            "colors": "from-purple-800 via-violet-900 to-purple-800",
+            "title": "Purple Haze",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 60
+        },
+        {
+            "colors": "from-gray-100 to-gray-300",
+            "title": "Silver",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 61
+        },
+        {
+            "colors": "from-orange-400 to-rose-400",
+            "title": "Orange Coral",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 62
+        },
+        {
+            "colors": "from-blue-400 to-emerald-400",
+            "title": "Blue Coral",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 63
+        },
+        {
+            "colors": "from-gray-900 via-gray-100 to-gray-900",
+            "title": "Beam Of Light",
+            "isFavourite": false,
+            "gradientType": "conic",
+            "id": 64
+        },
+        {
+            "colors": "from-yellow-500 via-purple-500 to-blue-500",
+            "title": "Safari Sunset",
+            "isFavourite": false,
+            "gradientType": "conic",
+            "id": 65
+        },
+        {
+            "colors": "from-sky-500 via-orange-200 to-yellow-600",
+            "title": "High Tide",
+            "isFavourite": false,
+            "gradientType": "conic",
+            "id": 66
+        },
+        {
+            "colors": "from-fuchsia-300 via-green-400 to-rose-700",
+            "title": "Hunniepop",
+            "isFavourite": false,
+            "gradientType": "conic",
+            "id": 67
+        },
+        {
+            "colors": "from-indigo-200 via-slate-600 to-indigo-200",
+            "title": "Soft Metal",
+            "isFavourite": false,
+            "gradientType": "conic",
+            "id": 68
+        },
+        {
+            "colors": "from-yellow-200 via-emerald-200 to-yellow-200",
+            "title": "Coral Sun",
+            "isFavourite": false,
+            "gradientType": "conic",
+            "id": 69
+        },
+        {
+            "colors": "from-rose-500 to-indigo-700",
+            "title": "Power Pink",
+            "isFavourite": false,
+            "gradientType": "conic",
+            "id": 70
+        },
+        {
+            "colors": "from-sky-400 to-blue-800",
+            "title": "Powder Blue",
+            "isFavourite": false,
+            "gradientType": "conic",
+            "id": 71
+        },
+        {
+            "colors": "from-rose-900 via-amber-800 to-rose-400",
+            "title": "Moody Sunset",
+            "isFavourite": false,
+            "gradientType": "conic",
+            "id": 72
+        },
+        {
+            "colors": "from-yellow-200 via-red-500 to-fuchsia-500",
+            "title": "Burnt Sand",
+            "isFavourite": false,
+            "gradientType": "conic",
+            "id": 73
+        },
+        {
+            "colors": "from-white via-sky-500 to-sky-500",
+            "title": "Blue / White Split",
+            "isFavourite": false,
+            "gradientType": "conic",
+            "id": 74
+        },
+        {
+            "colors": "from-indigo-900 via-indigo-400 to-indigo-900",
+            "title": "Purple Beam",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 75
+        },
+        {
+            "colors": "from-orange-900 via-amber-100 to-orange-900",
+            "title": "Sand Beam",
+            "isFavourite": false,
+            "gradientType": "conic",
+            "id": 76
+        },
+        {
+            "colors": "from-yellow-400 via-gray-50 to-teal-300",
+            "title": "Island Waves",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 77
+        },
+        {
+            "colors": "bg-gradient-to-tr from-violet-500 to-orange-300 Pastel",
+            "title": "Big Sur",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 78
+        },
+        {
+            "colors": "from-orange-400 to-sky-400",
+            "title": "Oahu",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 79
+        },
+        {
+            "colors": "from-red-900 via-violet-200 to-orange-500",
+            "title": "Peach Pie",
+            "isFavourite": false,
+            "gradientType": "conic",
+            "id": 80
+        },
+        {
+            "colors": "from-gray-900 via-purple-900 to-violet-600",
+            "title": "Salem",
+            "isFavourite": false,
+            "gradientType": "gradient",
+            "id": 81
+        },
+        {
+            "colors": "from-purple-900 to-indigo-500",
+            "title": "Purple Burst",
+            "isFavourite": false,
+            "gradientType": "radial",
+            "id": 82
+        },
+        {
+            "colors": "from-amber-900 to-yellow-300",
+            "title": "Amber Sunrise",
+            "isFavourite": false,
+            "gradientType": "radial",
+            "id": 83
+        },
+        {
+            "colors": "from-sky-400 to-indigo-900",
+            "title": "Sky Sea",
+            "isFavourite": false,
+            "gradientType": "radial",
+            "id": 84
+        },
+        {
+            "colors": "from-amber-700 via-orange-300 to-rose-800",
+            "title": "Rocket Power",
+            "isFavourite": false,
+            "gradientType": "radial",
+            "id": 85
+        },
+        {
+            "colors": "from-amber-200 via-violet-600 to-sky-900",
+            "title": "Blue Fame",
+            "isFavourite": false,
+            "gradientType": "radial",
+            "id": 86
+        },
+        {
+            "colors": "from-gray-300 via-fuchsia-600 to-orange-600",
+            "title": "Warm Glow",
+            "isFavourite": false,
+            "gradientType": "radial",
+            "id": 87
+        }
     ]
 }

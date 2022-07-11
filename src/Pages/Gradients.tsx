@@ -5,11 +5,10 @@ import { ColorsContext } from "../Contexts/ColorsContext"
 import Heading from "../Components/Heading"
 
 type gradientsdata = {
-    from: string
-    via?: string
-    to: string
+    colors: string
     title: string
     isFavourite: boolean
+    gradientType: string
     id: number
 }
 

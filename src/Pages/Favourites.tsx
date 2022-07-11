@@ -5,11 +5,10 @@ import Gradient from "../Components/Gradient"
 import Heading from "../Components/Heading"
 
 type gradientsdata = {
-    from: string
-    via?: string
-    to: string
+    colors: string
     title: string
     isFavourite: boolean
+    gradientType: string
     id: number
 }
 
@@ -30,7 +29,7 @@ function Favourites() {
     return (
         <Fragment>
             <Heading {...headingProps} />
-            <div className="flex flex-col gap-y-24 gap-x-6 lg:grid lg:grid-cols-2 xl:grid-cols-3 lg:justify-between mt-14">
+            <div className="flex flex-col gap-y-24 gap-x-6 md:grid md:grid-cols-2 xl:grid-cols-3 lg:justify-between mt-14">
                 {favourites.length !== 0 ? favourites.map(v => <Gradient key={v.id} {...v} />) : ''}
             </div>
 

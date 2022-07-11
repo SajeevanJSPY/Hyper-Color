@@ -13,7 +13,7 @@ function Generator() {
     const [viaValue, setViaValue] = useState(viaColors[Math.floor(Math.random() * viaColors.length)])
     const [toValue, setToValue] = useState(toColors[Math.floor(Math.random() * toColors.length)])
     const [direction, setDirection] = useState(directions[Math.floor(Math.random() * directions.length)])
-    const [text, setText] = useState('Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, voluptatibus autem. Fugit necessitatibus quos suscipit cum quod libero totam. sajeevan')
+    const [text, setText] = useState('Type Something...\nand Try to Change the Color')
 
     const style = `mx-auto w-[95%] max-w-[500px] rounded-2xl h-80 ${direction} ${fromValue} ${viaValue !== 'none' ? viaValue : ''} ${toValue}`
 
@@ -79,7 +79,7 @@ function Generator() {
             <div className="w-full py-4 flex flex-col gap-4 relative lg:flex-row lg:justify-center lg:gap-0 lg:items-center">
                 <div ref={ref} className={style}></div>
                 <div className="dark:bg-white relative mx-auto w-[95%] max-w-[500px] h-80 rounded-2xl overflow-hidden border-2">
-                    <textarea maxLength="170" spellCheck={false} ref={refFocus} value={text} onChange={e => setText(e.target.value)} className={`${direction} ${fromValue} ${viaValue !== 'none' ? viaValue : ''} ${toValue} focus:outline-none mx-auto text-3xl p-8 w-full h-full overflow-hidden mb-8 text-center bg-clip-text text-transparent font-bold`}></textarea>
+                    <textarea maxLength={170} spellCheck={false} ref={refFocus} value={text} onChange={e => setText(e.target.value)} className={`${direction} ${fromValue} ${viaValue !== 'none' ? viaValue : ''} ${toValue} focus:outline-none mx-auto text-3xl p-8 w-full h-full overflow-hidden mb-8 text-center bg-clip-text text-transparent font-bold`}></textarea>
                     <div className="absolute top-1 right-4 w-16 gap-2 flex justify-evenly">
                         <div onClick={() => refFocus.current?.focus()} className="group p-2 rounded-lg bg-[rgba(255,255,255,0.1)] dark:bg-slate-500 w-9 h-9 flex items-center justify-center cursor-pointer">{pencil}</div>
                         <div onClick={toggleTheme} className="group p-2 rounded-lg bg-[rgba(255,255,255,0.1)] w-9 h-9 flex items-center dark:bg-slate-500 justify-center cursor-pointer">{bulb}</div>

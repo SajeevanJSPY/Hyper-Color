@@ -1,5 +1,5 @@
 // Colors Context
-import { ReactElement, createContext, useState, useEffect } from "react";
+import { ReactElement, createContext, useState, useEffect, useRef } from "react";
 import CreateToast from "../Func/Toast"
 
 interface colorsproviderprops {
@@ -7,9 +7,8 @@ interface colorsproviderprops {
 }
 
 type gradientsdata = {
-    from: string
-    via?: string
-    to: string
+    colors: string
+    gradientType: string
     title: string
     isFavourite: boolean
     id: number
@@ -25,6 +24,8 @@ export const ColorsContext = createContext({})
 
 function ColorsContextProvider(props: colorsproviderprops) {
 
+    const ref = useRef(false)
+
     // All Gradients Colors
     const [colors, setColors] = useState([] as gradientsdata[])
 
@@ -37,7 +38,12 @@ function ColorsContextProvider(props: colorsproviderprops) {
     }, [])
 
     useEffect(() => {
-        localStorage.setItem('gradientsFavourite', JSON.stringify(favourites))
+        if(ref.current === true) {
+            localStorage.setItem('gradientsFavourite', JSON.stringify(favourites))
+        }
+        return () => {
+            ref.current = true
+        }
     }, [favourites])
 
     const handleFavouriteChange = (id: number) => {

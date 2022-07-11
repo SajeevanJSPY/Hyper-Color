@@ -1,15 +1,14 @@
 // Gradient Component
-import { SyntheticEvent, useContext, useState } from "react";
+import { SyntheticEvent, useContext, useEffect, useState } from "react";
 import { ColorsContext } from "../Contexts/ColorsContext";
 import GradientControl from "./GradientControl";
 import CreateToast from "../Func/Toast"
 
 type gradientsdata = {
-    from: string
-    via?: string
-    to: string
+    colors: string
     title: string
     isFavourite: boolean
+    gradientType: string
     id: number
 }
 
@@ -19,28 +18,49 @@ interface ColorContextValues {
     handleFavouriteChange: Function
 }
 
-const Gradient = ({ from, via, to, title, isFavourite, id }: gradientsdata) => {
+const Gradient = ({ colors, title, isFavourite, gradientType, id }: gradientsdata) => {
     const { handleFavouriteChange } = useContext(ColorsContext) as ColorContextValues
     const [direction, setDirection] = useState('bg-gradient-to-r');
+
+    const Directions = ['t', 'l', 'r', 'b', 'tl', 'tr', 'bl', 'br', 'center']
+
+    useEffect(() => {
+        const random = Directions[Math.floor(Math.random() * Directions.length)]
+        if (gradientType === "radial") {
+            if (random === 'center') {
+                setDirection('bg-radial')
+            } else {
+                setDirection(`bg-radial-at-${random}`)
+            }
+        }
+        if (gradientType === "conic") {
+            if (random === 'center') {
+                setDirection('bg-conic')
+            } else {
+                setDirection(`bg-conic-to-${random}`)
+            }
+        }
+    }, [])
 
     const settingDirection = (direction: string) => {
         setDirection(direction);
     }
 
     const tailwindCode = (e: SyntheticEvent) => {
-        const code = `${direction} from-${from}${via ? ' via-' + via : ''} to-${to}`
+        const code = `${direction} ${colors}`
         navigator.clipboard.writeText(code)
         CreateToast('Copied To Clipboard')
     }
-    
+
     // default Style
-    const defaultStyle = "container flex items-start justify-center relative mx-auto w-[95%] max-w-[500px] mt-4 mb-4 rounded-2xl h-64";
-    const style = `${defaultStyle} ${direction} from-${from}${via ? ' via-' + via : ''} to-${to}`;
+    const defaultStyle = `container flex items-start justify-center relative mx-auto w-[95%] max-w-[500px] mt-4 ${gradientType === "conic" || gradientType === "radial" ? 'mb-8' : 'mb-4'} rounded-2xl h-64`;
+    const style = `${defaultStyle} ${direction} ${colors}`;
 
     const GradientControlProps = {
         settingDirection,
         title,
-        tailwindCode
+        tailwindCode,
+        gradientType
     }
     return (
         <div className={style}>

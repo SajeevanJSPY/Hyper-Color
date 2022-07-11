@@ -8,6 +8,15 @@ module.exports = {
   theme:
   {
     extend: {
+      keyframes: {
+        heart: {
+          '0%, 100%': { transform: 'translateY(0) scale(1)' },
+          '50%': { transform: 'translateY(-15px) scale(1.5)' }
+        }
+      },
+      animation: {
+        forHeart: 'heart 5s ease-out infinite'
+      },
       backgroundImage: {
         conic: 'conic-gradient(var(--tw-gradient-stops))',
         'conic-to-t': 'conic-gradient(at top, var(--tw-gradient-stops))',
