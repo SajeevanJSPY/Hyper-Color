@@ -8,6 +8,7 @@ import Favourites from "./Pages/Favourites";
 import Flags from "./Pages/Flags";
 import Generator from "./Pages/Generator";
 import Gradients from "./Pages/Gradients";
+import Footer from "./Components/Footer";
 import NoMatch from "./Pages/NoMatch";
 
 type gradientsdata = {
@@ -46,6 +47,7 @@ function App() {
           <Route element={<NoMatch />} path="*" />
         </Routes>
       </div>
+      <Footer />
     </Fragment>
   )
 }
