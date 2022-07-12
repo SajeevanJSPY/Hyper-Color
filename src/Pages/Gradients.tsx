@@ -13,8 +13,9 @@ type gradientsdata = {
 }
 
 interface ColorContextValues {
-    colors: gradientsdata[],
-    favourites: gradientsdata[],
+    colors: gradientsdata[]
+    flags: gradientsdata[]
+    favourites: gradientsdata[]
     handleFavouriteChange: Function
 }
 

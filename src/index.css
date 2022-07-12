@@ -16,6 +16,140 @@ body {
   background-color: rgba(0, 0, 20, 0.95);
 }
 
+/* Flags */
+.bg-\[linear-gradient\(180deg\2c _\#ED2939_33\.333\%\2c _\#FFF_33\.333\%_66\.666\%\2c _\#ED2939_66\.666\%\)\] {
+  background-image: linear-gradient(180deg, #ED2939 33.333%, #FFF 33.333% 66.666%, #ED2939 66.666%);
+}
+
+.bg-\[linear-gradient\(90deg\2c _\#000_33\.333\%\2c _\#FFE936_33\.333\%_66\.666\%\2c _\#FF0F21_66\.666\%\)\] {
+  background-image: linear-gradient(90deg, #000 33.333%, #FFE936 33.333% 66.666%, #FF0F21 66.666%);
+}
+
+.bg-\[linear-gradient\(180deg\2c _\#FFF_33\.333\%\2c _\#00966E_33\.333\%_66\.666\%\2c _\#D62612_66\.666\%\)\] {
+  background-image: linear-gradient(180deg, #FFF 33.333%, #00966E 33.333% 66.666%, #D62612 66.666%);
+}
+
+.bg-\[linear-gradient\(90deg\2c _\#002664_33\.333\%\2c _\#FCD116_33\.333\%_66\.666\%\2c _\#CE1126_66\.666\%\)\] {
+  background-image: linear-gradient(90deg, #002664 33.333%, #FCD116 33.333% 66.666%, #CE1126 66.666%);
+}
+
+.bg-\[linear-gradient\(180deg\2c _\#FCD116_50\%\2c _\#003893_50\%_75\%\2c _\#CE1126_75\%\)\] {
+  background-image: linear-gradient(180deg, #FCD116 50%, #003893 50% 75%, #CE1126 75%);
+}
+
+.bg-\[linear-gradient\(135deg\2c _\#009543_40\%\2c _\#FBDE4A_40\%_60\%\2c _\#DC241F_60\%\)\] {
+  background-image: linear-gradient(135deg, #009543 40%, #FBDE4A 40% 60%, #DC241F 60%);
+}
+
+.bg-\[linear-gradient\(180deg\2c _\#002B7F_15\%\2c _\#FFF_15\%_30\%\2c _\#CE1126_30\%_70\%\2c _\#FFF_70\%_85\%\2c _\#002B7F_85\%\)\] {
+  background-image: linear-gradient(180deg, #002B7F 15%, #FFF 15% 30%, #CE1126 30% 70%, #FFF 70% 85%, #002B7F 85%);
+}
+
+.bg-\[linear-gradient\(180deg\2c _\#1291FF_33\.333\%\2c _\#000_33\.333\%_66\.666\%\2c _\#FFF_66\.666\%\)\] {
+  background-image: linear-gradient(180deg, #1291FF 33.333%, #000 33.333% 66.666%, #FFF 66.666%);
+}
+
+.bg-\[linear-gradient\(90deg\2c _\#002395_33\.333\%\2c _\#FFF_33\.333\%_66\.666\%\2c _\#ED2939_66\.666\%\)\] {
+  background-image: linear-gradient(90deg, #002395 33.333%, #FFF 33.333% 66.666%, #ED2939 66.666%);
+}
+
+.bg-\[linear-gradient\(180deg\2c _\#009A44_33\.333\%\2c _\#FFCD00_33\.333\%_66\.666\%\2c _\#0072CE_66\.666\%\)\] {
+  background-image: linear-gradient(180deg, #009A44 33.333%, #FFCD00 33.333% 66.666%, #0072CE 66.666%);
+}
+
+.bg-\[linear-gradient\(180deg\2c _\#EF3340_35\%\2c _\#FFF_35\%_40\%\2c _\#003DA5_40\%_60\%\2c _\#FFF_60\%_65\%\2c _\#009639_65\%\)\] {
+  background-image: linear-gradient(180deg, #EF3340 35%, #FFF 35% 40%, #003DA5 40% 60%, #FFF 60% 65%, #009639 65%);
+}
+
+.bg-\[linear-gradient\(180deg\2c _\#000_33\.333\%\2c _\#FF0000_33\.333\%_66\.666\%\2c _\#FFCC00_66\.666\%\)\] {
+  background-image: linear-gradient(180deg, #000 33.333%, #FF0000 33.333% 66.666%, #FFCC00 66.666%);
+}
+
+.bg-\[linear-gradient\(90deg\2c _\#CE1126_33\.333\%\2c _\#FCD116_33\.333\%_66\.666\%\2c _\#009460_66\.666\%\)\] {
+  background-image: linear-gradient(90deg, #CE1126 33.333%, #FCD116 33.333% 66.666%, #009460 66.666%);
+}
+
+.bg-\[linear-gradient\(180deg\2c _\#C8102E_33\.333\%\2c _\#FFF_33\.333\%_66\.666\%\2c _\#00843E_66\.666\%\)\] {
+  background-image: linear-gradient(180deg, #C8102E 33.333%, #FFF 33.333% 66.666%, #00843E 66.666%);
+}
+
+.bg-\[linear-gradient\(180deg\2c _\#C8102E_50\%\2c _\#FFF_50\%\)\] {
+  background-image: linear-gradient(180deg, #C8102E 50%, #FFF 50%);
+}
+
+.bg-\[linear-gradient\(90deg\2c _\#009B48_33\.333\%\2c _\#FFF_33\.333\%_66\.666\%\2c _\#FF7900_66\.666\%\)\] {
+  background-image: linear-gradient(90deg, #009B48 33.333%, #FFF 33.333% 66.666%, #FF7900 66.666%);
+}
+
+.bg-\[linear-gradient\(90deg\2c _\#009246_33\.333\%\2c _\#FFF_33\.333\%_66\.666\%\2c _\#CE2B37_66\.666\%\)\] {
+  background-image: linear-gradient(90deg, #009246 33.333%, #FFF 33.333% 66.666%, #CE2B37 66.666%);
+}
+
+.bg-\[linear-gradient\(90deg\2c _\#F77F00_33\.333\%\2c _\#FFF_33\.333\%_66\.666\%\2c _\#009E60_66\.666\%\)\] {
+  background-image: linear-gradient(90deg, #F77F00 33.333%, #FFF 33.333% 66.666%, #009E60 66.666%);
+}
+
+.bg-\[linear-gradient\(180deg\2c _\#9E1B34_40\%\2c _\#FFF_40\%_60\%\2c _\#9E1B34_60\%\)\] {
+  background-image: linear-gradient(180deg, #9E1B34 40%, #FFF 40% 60%, #9E1B34 60%);
+}
+
+.bg-\[linear-gradient\(180deg\2c _\#FDB913_33\.333\%\2c _\#006A44_33\.333\%_66\.666\%\2c _\#C1272D_66\.666\%\)\] {
+  background-image: linear-gradient(180deg, #FDB913 33.333%, #006A44 33.333% 66.666%, #C1272D 66.666%);
+}
+
+.bg-\[linear-gradient\(180deg\2c _\#ED2939_33\.333\%\2c _\#FFF_33\.333\%_66\.666\%\2c _\#00A1DE_66\.666\%\)\] {
+  background-image: linear-gradient(180deg, #ED2939 33.333%, #FFF 33.333% 66.666%, #00A1DE 66.666%);
+}
+
+.bg-\[linear-gradient\(90deg\2c _\#14B53A_33\.333\%\2c _\#FCD116_33\.333\%_66\.666\%\2c _\#CE1126_66\.666\%\)\] {
+  background-image: linear-gradient(90deg, #14B53A 33.333%, #FCD116 33.333% 66.666%, #CE1126 66.666%);
+}
+
+.bg-\[linear-gradient\(180deg\2c _\#EE2737_25\%\2c _\#151F6D_25\%_50\%\2c _\#FFD600_50\%_75\%\2c _\#009F4D_75\%\)\] {
+  background-image: linear-gradient(180deg, #EE2737 25%, #151F6D 25% 50%, #FFD600 50% 75%, #009F4D 75%);
+}
+
+.bg-\[linear-gradient\(180deg\2c _\#C8102E_50\%\2c _\#FFF_50\%\)\] {
+  background-image: linear-gradient(180deg, #C8102E 50%, #FFF 50%);
+}
+
+.bg-\[linear-gradient\(90deg\2c _\#AE1C28_33\.333\%\2c _\#FFF_33\.333\%_66\.666\%\2c _\#21468B_66\.666\%\)\] {
+  background-image: linear-gradient(90deg, #AE1C28 33.333%, #FFF 33.333% 66.666%, #21468B 66.666%);
+}
+
+.bg-\[linear-gradient\(90deg\2c _\#008753_33\.333\%\2c _\#FFF_33\.333\%_66\.666\%\2c _\#008753_66\.666\%\)\] {
+  background-image: linear-gradient(90deg, #008753 33.333%, #FFF 33.333% 66.666%, #008753 66.666%);
+}
+
+.bg-\[linear-gradient\(90deg\2c _\#D91023_33\.333\%\2c _\#FFF_33\.333\%_66\.666\%\2c _\#D91023_66\.666\%\)\] {
+  background-image: linear-gradient(90deg, #D91023 33.333%, #FFF 33.333% 66.666%, #D91023 66.666%);
+}
+
+.bg-\[linear-gradient\(180deg\2c _\#D22630_50\%\2c _\#FFF_50\%\)\] {
+  background-image: linear-gradient(180deg, #D22630 50%, #FFF 50%);
+}
+
+.bg-\[linear-gradient\(90deg\2c _\#002B7F_33\.333\%\2c _\#FCD116_33\.333\%_66\.666\%\2c _\#CE1126_66\.666\%\)\] {
+  background-image: linear-gradient(90deg, #002B7F 33.333%, #FCD116 33.333% 66.666%, #CE1126 66.666%);
+}
+
+.bg-\[linear-gradient\(180deg\2c _\#1EB53A_33\.333\%\2c _\#FFF_33\.333\%_66\.666\%\2c _\#0072C6_66\.666\%\)\] {
+  background-image: linear-gradient(180deg, #1EB53A 33.333%, #FFF 33.333% 66.666%, #0072C6 66.666%);
+}
+
+.bg-\[linear-gradient\(180deg\2c _\#012169_15\%\2c _\#FFF_15\%_30\%\2c _\#C8102E_30\%_70\%\2c _\#FFF_70\%_85\%\2c _\#012169_85\%\)\] {
+  background-image: linear-gradient(180deg, #012169 15%, #FFF 15% 30%, #C8102E 30% 70%, #FFF 70% 85%, #012169 85%);
+}
+
+.bg-\[linear-gradient\(180deg\2c _\#005BBB_50\%\2c _\#FFD500_50\%\)\] {
+  background-image: linear-gradient(180deg, #005BBB 50%, #FFD500 50%);
+}
+
+.bg-\[linear-gradient\(180deg\2c _\#F42938_33\.333\%\2c _\#FFF_33\.333\%_66\.666\%\2c _\#000_66\.666\%\)\] {
+  background-image: linear-gradient(180deg, #F42938 33.333%, #FFF 33.333% 66.666%, #000 66.666%);
+}
+
+
 /* Stops */
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));

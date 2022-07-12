@@ -11,21 +11,6 @@ import Gradients from "./Pages/Gradients";
 import Footer from "./Components/Footer";
 import NoMatch from "./Pages/NoMatch";
 
-type gradientsdata = {
-  from: string
-  via?: string
-  to: string
-  title: string
-  isFavourite: boolean
-  id: number
-}
-
-interface ColorContextValues {
-  colors: gradientsdata[],
-  favourites: gradientsdata[],
-  handleFavouriteChange: Function
-}
-
 interface NavbarContextValuesType {
   isNavbarOpen: boolean
   isHamburgerShow: boolean
@@ -33,7 +18,6 @@ interface NavbarContextValuesType {
 
 function App() {
   const { isNavbarOpen, isHamburgerShow } = useContext(NavbarContext) as NavbarContextValuesType
-  const ColorContext = useContext(ColorsContext) as ColorContextValues
 
   return (
     <Fragment>

@@ -1,0 +1,233 @@
+[
+    {
+        "title": "Austria",
+        "colors": "bg-[linear-gradient(180deg,_#ED2939_33.333%,_#FFF_33.333%_66.666%,_#ED2939_66.666%)]",
+        "isFavourite": false,
+        "gradientType": "flag",
+        "id": 88
+    },
+    {
+        "title": "Belgium",
+        "colors": "bg-[linear-gradient(90deg,_#000_33.333%,_#FFE936_33.333%_66.666%,_#FF0F21_66.666%)]",
+        "isFavourite": false,
+        "gradientType": "flag",
+        "id": 89
+    },
+    {
+        "title": "Bulgaria",
+        "colors": "bg-[linear-gradient(180deg,_#FFF_33.333%,_#00966E_33.333%_66.666%,_#D62612_66.666%)]",
+        "isFavourite": false,
+        "gradientType": "flag",
+        "id": 90
+    },
+    {
+        "title": "Chad",
+        "colors": "bg-[linear-gradient(90deg,_#002664_33.333%,_#FCD116_33.333%_66.666%,_#CE1126_66.666%)]",
+        "isFavourite": false,
+        "gradientType": "flag",
+        "id": 91
+    },
+    {
+        "title": "Colombia",
+        "colors": "bg-[linear-gradient(180deg,_#FCD116_50%,_#003893_50%_75%,_#CE1126_75%)]",
+        "isFavourite": false,
+        "gradientType": "flag",
+        "id": 92
+    },
+    {
+        "title": "Congo",
+        "colors": "bg-[linear-gradient(135deg,_#009543_40%,_#FBDE4A_40%_60%,_#DC241F_60%)]",
+        "isFavourite": false,
+        "gradientType": "flag",
+        "id": 93
+    },
+    {
+        "title": "Costa Rica",
+        "colors": "bg-[linear-gradient(180deg,_#002B7F_15%,_#FFF_15%_30%,_#CE1126_30%_70%,_#FFF_70%_85%,_#002B7F_85%)]",
+        "isFavourite": false,
+        "gradientType": "flag",
+        "id": 94
+    },
+    {
+        "title": "Estonia",
+        "colors": "bg-[linear-gradient(180deg,_#1291FF_33.333%,_#000_33.333%_66.666%,_#FFF_66.666%)]",
+        "isFavourite": false,
+        "gradientType": "flag",
+        "id": 95
+    },
+    {
+        "title": "France",
+        "colors": "bg-[linear-gradient(90deg,_#002395_33.333%,_#FFF_33.333%_66.666%,_#ED2939_66.666%)]",
+        "isFavourite": false,
+        "gradientType": "flag",
+        "id": 96
+    },
+    {
+        "title": "Gabon",
+        "colors": "bg-[linear-gradient(180deg,_#009A44_33.333%,_#FFCD00_33.333%_66.666%,_#0072CE_66.666%)]",
+        "isFavourite": false,
+        "gradientType": "flag",
+        "id": 97
+    },
+    {
+        "title": "Gambia",
+        "colors": "bg-[linear-gradient(180deg,_#EF3340_35%,_#FFF_35%_40%,_#003DA5_40%_60%,_#FFF_60%_65%,_#009639_65%)]",
+        "isFavourite": false,
+        "gradientType": "flag",
+        "id": 98
+    },
+    {
+        "title": "Germany",
+        "colors": "bg-[linear-gradient(180deg,_#000_33.333%,_#FF0000_33.333%_66.666%,_#FFCC00_66.666%)]",
+        "isFavourite": false,
+        "gradientType": "flag",
+        "id": 99
+    },
+    {
+        "title": "Guinea",
+        "colors": "bg-[linear-gradient(90deg,_#CE1126_33.333%,_#FCD116_33.333%_66.666%,_#009460_66.666%)]",
+        "isFavourite": false,
+        "gradientType": "flag",
+        "id": 100
+    },
+    {
+        "title": "Hungary",
+        "colors": "bg-[linear-gradient(180deg,_#C8102E_33.333%,_#FFF_33.333%_66.666%,_#00843E_66.666%)]",
+        "isFavourite": false,
+        "gradientType": "flag",
+        "id": 101
+    },
+    {
+        "title": "Indonesia",
+        "colors": "bg-[linear-gradient(180deg,_#C8102E_50%,_#FFF_50%)]",
+        "isFavourite": false,
+        "gradientType": "flag",
+        "id": 102
+    },
+    {
+        "title": "Ireland",
+        "colors": "bg-[linear-gradient(90deg,_#009B48_33.333%,_#FFF_33.333%_66.666%,_#FF7900_66.666%)]",
+        "isFavourite": false,
+        "gradientType": "flag",
+        "id": 103
+    },
+    {
+        "title": "Italy",
+        "colors": "bg-[linear-gradient(90deg,_#009246_33.333%,_#FFF_33.333%_66.666%,_#CE2B37_66.666%)]",
+        "isFavourite": false,
+        "gradientType": "flag",
+        "id": 104
+    },
+    {
+        "title": "Ivory Coast",
+        "colors": "bg-[linear-gradient(90deg,_#F77F00_33.333%,_#FFF_33.333%_66.666%,_#009E60_66.666%)]",
+        "isFavourite": false,
+        "gradientType": "flag",
+        "id": 105
+    },
+    {
+        "title": "Latvia",
+        "colors": "bg-[linear-gradient(180deg,_#9E1B34_40%,_#FFF_40%_60%,_#9E1B34_60%)]",
+        "isFavourite": false,
+        "gradientType": "flag",
+        "id": 106
+    },
+    {
+        "title": "Lithuania",
+        "colors": "bg-[linear-gradient(180deg,_#FDB913_33.333%,_#006A44_33.333%_66.666%,_#C1272D_66.666%)]",
+        "isFavourite": false,
+        "gradientType": "flag",
+        "id": 107
+    },
+    {
+        "title": "Luxemburg",
+        "colors": "bg-[linear-gradient(180deg,_#ED2939_33.333%,_#FFF_33.333%_66.666%,_#00A1DE_66.666%)]",
+        "isFavourite": false,
+        "gradientType": "flag",
+        "id": 108
+    },
+    {
+        "title": "Mali",
+        "colors": "bg-[linear-gradient(90deg,_#14B53A_33.333%,_#FCD116_33.333%_66.666%,_#CE1126_66.666%)]",
+        "isFavourite": false,
+        "gradientType": "flag",
+        "id": 109
+    },
+    {
+        "title": "Mauritius",
+        "colors": "bg-[linear-gradient(180deg,_#EE2737_25%,_#151F6D_25%_50%,_#FFD600_50%_75%,_#009F4D_75%)]",
+        "isFavourite": false,
+        "gradientType": "flag",
+        "id": 110
+    },
+    {
+        "title": "Monaco",
+        "colors": "bg-[linear-gradient(180deg,_#C8102E_50%,_#FFF_50%)]",
+        "isFavourite": false,
+        "gradientType": "flag",
+        "id": 111
+    },
+    {
+        "title": "Netherlands",
+        "colors": "bg-[linear-gradient(90deg,_#AE1C28_33.333%,_#FFF_33.333%_66.666%,_#21468B_66.666%)]",
+        "isFavourite": false,
+        "gradientType": "flag",
+        "id": 112
+    },
+    {
+        "title": "Nigeria",
+        "colors": "bg-[linear-gradient(90deg,_#008753_33.333%,_#FFF_33.333%_66.666%,_#008753_66.666%)]",
+        "isFavourite": false,
+        "gradientType": "flag",
+        "id": 113
+    },
+    {
+        "title": "Peru",
+        "colors": "bg-[linear-gradient(90deg,_#D91023_33.333%,_#FFF_33.333%_66.666%,_#D91023_66.666%)]",
+        "isFavourite": false,
+        "gradientType": "flag",
+        "id": 114
+    },
+    {
+        "title": "Poland",
+        "colors": "bg-[linear-gradient(180deg,_#D22630_50%,_#FFF_50%)]",
+        "isFavourite": false,
+        "gradientType": "flag",
+        "id": 115
+    },
+    {
+        "title": "Romania",
+        "colors": "bg-[linear-gradient(90deg,_#002B7F_33.333%,_#FCD116_33.333%_66.666%,_#CE1126_66.666%)]",
+        "isFavourite": false,
+        "gradientType": "flag",
+        "id": 116
+    },
+    {
+        "title": "Sierra Leon",
+        "colors": "bg-[linear-gradient(180deg,_#1EB53A_33.333%,_#FFF_33.333%_66.666%,_#0072C6_66.666%)]",
+        "isFavourite": false,
+        "gradientType": "flag",
+        "id": 117
+    },
+    {
+        "title": "Thailand",
+        "colors": "bg-[linear-gradient(180deg,_#012169_15%,_#FFF_15%_30%,_#C8102E_30%_70%,_#FFF_70%_85%,_#012169_85%)]",
+        "isFavourite": false,
+        "gradientType": "flag",
+        "id": 118
+    },
+    {
+        "title": "Ukraine",
+        "colors": "bg-[linear-gradient(180deg,_#005BBB_50%,_#FFD500_50%)]",
+        "isFavourite": false,
+        "gradientType": "flag",
+        "id": 119
+    },
+    {
+        "title": "Yemen",
+        "colors": "bg-[linear-gradient(180deg,_#F42938_33.333%,_#FFF_33.333%_66.666%,_#000_66.666%)]",
+        "isFavourite": false,
+        "gradientType": "flag",
+        "id": 120
+    }
+]

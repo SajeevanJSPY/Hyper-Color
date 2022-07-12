@@ -6,9 +6,13 @@ import { BrowserRouter } from "react-router-dom"
 import ColorsContextProvider from './Contexts/ColorsContext'
 import NavbarContextProvider from './Contexts/NavbarContext'
 import gradients from "./assests/GradientsAssest.json"
+import flags from "./assests/FlagsAssest.json"
 
 if(!localStorage.getItem('gradients')) {
   localStorage.setItem('gradients', JSON.stringify(gradients.gradients))
+}
+if(!localStorage.getItem('flags')) {
+  localStorage.setItem('flags', JSON.stringify(flags))
 }
 if(!localStorage.getItem('gradientsFavourite')) {
   localStorage.setItem('gradientsFavourite', JSON.stringify([]))

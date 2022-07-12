@@ -13,8 +13,9 @@ type gradientsdata = {
 }
 
 interface ColorContextValues {
-    colors: gradientsdata[],
-    favourites: gradientsdata[],
+    colors: gradientsdata[]
+    flags: gradientsdata[]
+    favourites: gradientsdata[]
     handleFavouriteChange: Function
 }
 
@@ -47,14 +48,19 @@ const Gradient = ({ colors, title, isFavourite, gradientType, id }: gradientsdat
     }
 
     const tailwindCode = (e: SyntheticEvent) => {
-        const code = `${direction} ${colors}`
+        let code: string
+        if(gradientType === 'flag') {
+            code = `${colors}`
+        } else {
+            code = `${direction} ${colors}`
+        }
         navigator.clipboard.writeText(code)
         CreateToast('Copied To Clipboard')
     }
 
     // default Style
     const defaultStyle = `container flex items-start justify-center relative mx-auto w-[95%] max-w-[500px] mt-4 ${gradientType === "conic" || gradientType === "radial" ? 'mb-8' : 'mb-4'} rounded-2xl h-64`;
-    const style = `${defaultStyle} ${direction} ${colors}`;
+    const style = `${defaultStyle} ${!(gradientType === 'flag') ? direction : ''} ${colors}`;
 
     const GradientControlProps = {
         settingDirection,
