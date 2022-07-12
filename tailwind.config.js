@@ -12,10 +12,15 @@ module.exports = {
         heart: {
           '0%, 100%': { transform: 'translateY(0) scale(1)' },
           '50%': { transform: 'translateY(-15px) scale(1.5)' }
+        },
+        star: {
+          '0%, 100%': { color: 'lightblue' },
+          '50%': { color: 'pink' }
         }
       },
       animation: {
-        forHeart: 'heart 5s ease-out infinite'
+        forHeart: 'heart 5s ease-out infinite',
+        forStar: 'star 2s ease-in infinite'
       },
       backgroundImage: {
         conic: 'conic-gradient(var(--tw-gradient-stops))',

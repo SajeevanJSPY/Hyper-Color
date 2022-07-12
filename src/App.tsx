@@ -1,7 +1,6 @@
 import { Fragment, useContext } from "react"
 import { Route, Routes } from "react-router-dom"
 
-import { ColorsContext } from "./Contexts/ColorsContext";
 import { NavbarContext } from "./Contexts/NavbarContext";
 import Navbar from "./Components/Navbar";
 import Favourites from "./Pages/Favourites";

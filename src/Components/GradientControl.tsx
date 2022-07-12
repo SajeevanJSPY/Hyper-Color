@@ -1,6 +1,6 @@
 // Gradient Control Component
 
-import { useRef, MouseEventHandler } from "react"
+import { useRef } from "react"
 import GradientIcons from "./GradientIcons";
 import { tailwindCSS, image, code } from "../assests/IconsAssests"
 import useCSSCode from "../Func/useCSSCode"
@@ -9,7 +9,7 @@ import useDownloadImage from "../Func/useDownloadImage"
 type gradientscontroltype = {
     settingDirection: Function
     title: string
-    tailwindCode: MouseEventHandler
+    tailwindCode: Function
     gradientType: string
 }
 
@@ -25,7 +25,7 @@ const GradientControl = ({ settingDirection, title, tailwindCode, gradientType }
                 <header className="flex justify-around w-full">
                     <div className="text-white font-bold uppercase">{title}</div>
                     <div className="text-white flex gap-4 items-center">
-                        <div onClick={tailwindCode} className="cursor-pointer group bg-[rgba(255,255,255,0.1)] p-[7px] rounded-xl">
+                        <div onClick={() => tailwindCode()} className="cursor-pointer group bg-[rgba(255,255,255,0.1)] p-[7px] rounded-xl">
                             {tailwindCSS}
                         </div>
                         <div onClick={() => CSSCodeFn()} className="cursor-pointer group bg-[rgba(255,255,255,0.1)] p-[7px] rounded-xl">{code}</div>
@@ -41,7 +41,7 @@ const GradientControl = ({ settingDirection, title, tailwindCode, gradientType }
                 <header className="flex justify-around w-full mt-4">
                     <div className="text-white font-bold uppercase">{title}</div>
                     <div className="text-white flex gap-4 items-center">
-                        <div onClick={tailwindCode} className="cursor-pointer group bg-[rgba(255,255,255,0.1)] p-[7px] rounded-xl">
+                        <div onClick={() => tailwindCode()} className="cursor-pointer group bg-[rgba(255,255,255,0.1)] p-[7px] rounded-xl">
                             {tailwindCSS}
                         </div>
                         <div onClick={() => CSSCodeFn()} className="cursor-pointer group bg-[rgba(255,255,255,0.1)] p-[7px] rounded-xl">{code}</div>

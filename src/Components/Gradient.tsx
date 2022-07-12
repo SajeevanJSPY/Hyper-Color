@@ -1,5 +1,5 @@
 // Gradient Component
-import { SyntheticEvent, useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { ColorsContext } from "../Contexts/ColorsContext";
 import GradientControl from "./GradientControl";
 import CreateToast from "../Func/Toast"
@@ -47,7 +47,7 @@ const Gradient = ({ colors, title, isFavourite, gradientType, id }: gradientsdat
         setDirection(direction);
     }
 
-    const tailwindCode = (e: SyntheticEvent) => {
+    const tailwindCode = () => {
         let code: string
         if(gradientType === 'flag') {
             code = `${colors}`

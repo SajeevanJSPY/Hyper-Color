@@ -1,5 +1,5 @@
 // Generators Component
-import { Fragment, useState, useRef, SyntheticEvent } from "react";
+import { Fragment, useState, useRef } from "react";
 import Heading from "../Components/Heading";
 import { tailwindCSS, code, image, refresh, pencil, bulb } from '../assests/IconsAssests'
 import { fromColors, toColors, viaColors, directions } from "../assests/ColorsAssest.json"
@@ -28,7 +28,7 @@ function Generator() {
     const refFocus = useRef<HTMLTextAreaElement>(null)
 
     const randomNum = Math.floor(Math.random() * 10000)
-    const tailwindCode = (e: SyntheticEvent) => {
+    const tailwindCode = () => {
         const code = `${direction} ${fromValue} ${viaValue !== 'none' ? viaValue : ''} ${toValue}`
         navigator.clipboard.writeText(code)
         CreateToast('Copied To Clipboard')
@@ -36,7 +36,7 @@ function Generator() {
     const CSSCodeFn = useCSSCode(ref)
     const DownloadImageFn = useDownloadImage(ref, `${randomNum}`)
 
-    function toggleTheme(e: SyntheticEvent) {
+    function toggleTheme() {
         if (document.body.classList.contains('dark')) {
             document.body.classList.remove('dark')
         } else {
@@ -55,7 +55,7 @@ function Generator() {
             <Heading {...headingProps} />
             <div className="mt-8 pb-8 w-full">
                 <div className="flex gap-2 px-4 py-2 items-center">
-                    <div onClick={tailwindCode} className="cursor-pointer group bg-[rgba(255,255,255,0.1)] p-[7px] rounded-xl">{tailwindCSS}</div>
+                    <div onClick={() => tailwindCode()} className="cursor-pointer group bg-[rgba(255,255,255,0.1)] p-[7px] rounded-xl">{tailwindCSS}</div>
                     <div onClick={() => CSSCodeFn()} className="cursor-pointer group bg-[rgba(255,255,255,0.1)] p-[7px] rounded-xl">{code}</div>
                     <div onClick={() => DownloadImageFn()} className="cursor-pointer group bg-[rgba(255,255,255,0.1)] p-[7px] rounded-xl">{image}</div>
                     <div onClick={() => randomChecking()} className="cursor-pointer group bg-[rgba(255,255,255,0.1)] p-[7px] rounded-xl">{refresh}</div>
@@ -78,11 +78,11 @@ function Generator() {
 
             <div className="w-full py-4 flex flex-col gap-4 relative lg:flex-row lg:justify-center lg:gap-0 lg:items-center">
                 <div ref={ref} className={style}></div>
-                <div className="dark:bg-white relative mx-auto w-[95%] max-w-[500px] h-80 rounded-2xl overflow-hidden border-2">
+                <div className="dark:bg-white relative mx-auto w-[95%] max-w-[500px] h-80 rounded-2xl overflow-hidden border-2 focus-within:border-blue-300">
                     <textarea maxLength={170} spellCheck={false} ref={refFocus} value={text} onChange={e => setText(e.target.value)} className={`${direction} ${fromValue} ${viaValue !== 'none' ? viaValue : ''} ${toValue} focus:outline-none mx-auto text-3xl p-8 w-full h-full overflow-hidden mb-8 text-center bg-clip-text text-transparent font-bold`}></textarea>
                     <div className="absolute top-1 right-4 w-16 gap-2 flex justify-evenly">
                         <div onClick={() => refFocus.current?.focus()} className="group p-2 rounded-lg bg-[rgba(255,255,255,0.1)] dark:bg-slate-500 w-9 h-9 flex items-center justify-center cursor-pointer">{pencil}</div>
-                        <div onClick={toggleTheme} className="group p-2 rounded-lg bg-[rgba(255,255,255,0.1)] w-9 h-9 flex items-center dark:bg-slate-500 justify-center cursor-pointer">{bulb}</div>
+                        <div onClick={() => toggleTheme()} className="group p-2 rounded-lg bg-[rgba(255,255,255,0.1)] w-9 h-9 flex items-center dark:bg-slate-500 justify-center cursor-pointer">{bulb}</div>
                     </div>
                 </div>
             </div>
