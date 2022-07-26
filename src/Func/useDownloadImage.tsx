@@ -8,6 +8,7 @@ function useDownloadImage(ref: RefObject<HTMLDivElement>, title: string) {
         if (ref.current === null) {
             return
         }
+        console.log(ref.current.parentElement)
         const mainEle = ref.current.parentElement as HTMLElement
         const computedStyle = window.getComputedStyle(mainEle)
         const newEle = mainEle.cloneNode(false) as HTMLElement

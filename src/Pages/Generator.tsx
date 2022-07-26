@@ -77,7 +77,9 @@ function Generator() {
             </div>
 
             <div className="w-full py-4 flex flex-col gap-4 relative lg:flex-row lg:justify-center lg:gap-0 lg:items-center">
-                <div ref={ref} className={style}></div>
+                <div className={style}>
+                    <span ref={ref}></span>
+                </div>
                 <div className="dark:bg-white relative mx-auto w-[95%] max-w-[500px] h-80 rounded-2xl overflow-hidden border-2 focus-within:border-blue-300">
                     <textarea maxLength={170} spellCheck={false} ref={refFocus} value={text} onChange={e => setText(e.target.value)} className={`${direction} ${fromValue} ${viaValue !== 'none' ? viaValue : ''} ${toValue} focus:outline-none mx-auto text-3xl p-8 w-full h-full overflow-hidden mb-8 text-center bg-clip-text text-transparent font-bold`}></textarea>
                     <div className="absolute top-1 right-4 w-16 gap-2 flex justify-evenly">

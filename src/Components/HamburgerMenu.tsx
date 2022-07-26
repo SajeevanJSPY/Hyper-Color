@@ -22,13 +22,13 @@ const HambBurgerMenu = () => {
 
     return (
         <div className="fixed z-20 flex flex-col gap-3 text-white text-xl items-center bg-[rgba(0,0,45,0.9)] py-4 transition-all ease-linear duration-150 w-full overflow-hidden rounded-b-3xl top-[57px]">
-            <NavLink onClick={NavbarStateChange} to="generator" className={({ isActive }) => isActive ? `text-cyan-400 ${tabStyle} rounded-xl` : `text-white ${tabStyle} rounded-xl`}>
+            <NavLink onClick={NavbarStateChange} to="generator" className={({ isActive }) => isActive ? `text-cyan-400 ${tabStyle} rounded-xl font-Ubuntu` : `text-white ${tabStyle} rounded-xl font-Ubuntu`}>
                 Generator
             </NavLink>
-            <NavLink onClick={NavbarStateChange} to="favourites" className={({ isActive }) => isActive ? `text-cyan-400 ${tabStyle} rounded-xl` : `text-white ${tabStyle} rounded-xl`}>
+            <NavLink onClick={NavbarStateChange} to="favourites" className={({ isActive }) => isActive ? `text-cyan-400 ${tabStyle} rounded-xl font-Ubuntu` : `text-white ${tabStyle} rounded-xl font-Ubuntu`}>
                 Favourites
             </NavLink>
-            <NavLink onClick={NavbarStateChange} to="flags" className={({ isActive }) => isActive ? `text-cyan-400 ${tabStyle} rounded-xl` : `text-white ${tabStyle} rounded-xl`}>
+            <NavLink onClick={NavbarStateChange} to="flags" className={({ isActive }) => isActive ? `text-cyan-400 ${tabStyle} rounded-xl font-Ubuntu` : `text-white ${tabStyle} rounded-xl font-Ubuntu`}>
                 Flags
             </NavLink>
             <div className="flex gap-8 mt-2">

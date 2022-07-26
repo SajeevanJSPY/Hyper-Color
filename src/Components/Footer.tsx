@@ -9,8 +9,8 @@ function Footer() {
 
     return (
         <footer className="w-full h-20 bg-[rgba(0,0,60,0.9)] tracking-wider font-semibold text-white mt-28 flex flex-col justify-center items-center text-xl">
-            <div className="flex">Created with {favourite} and ReactJS </div>
-            <a className="flex group hover:text-white/70" href="https://github.com/jordihales/hypercolor">Credits to jordihales | mark { star }</a>
+            <div className="flex font-dance-cursive">Created with {favourite} and ReactJS </div>
+            <a className="flex group font-lobster-cursive hover:text-white/70" href="https://github.com/jordihales/hypercolor">Credits to jordihales | mark { star }</a>
         </footer>
     )
 }

@@ -1,13 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 
 const defaultTheme = require('tailwindcss/defaultTheme')
-
 module.exports = {
   darkMode: 'class',
   content: ["./index.html", "./src/**/*.{js,ts,tsx,jsx}"],
   theme:
   {
     extend: {
+      fontFamily: {
+        'dance-cursive': ['Dancing Script',  'cursive'],
+        'lobster-cursive': ['Lobster', 'cursive'],
+        'Playball': ['Playball', 'cursive'],
+        'Roboto': ['Roboto', 'sans-serif'],
+        'Ubuntu': ['Ubuntu', 'sans-serif'],
+      },
       keyframes: {
         heart: {
           '0%, 100%': { transform: 'translateY(0) scale(1)' },

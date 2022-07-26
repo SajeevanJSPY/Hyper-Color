@@ -70,7 +70,6 @@ const Gradient = ({ colors, title, isFavourite, gradientType, id }: gradientsdat
     }
     return (
         <div className={style}>
-
             <GradientControl {...GradientControlProps} />
             <div onClick={e => {
                 e.preventDefault();

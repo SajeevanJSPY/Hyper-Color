@@ -23,7 +23,7 @@ const GradientControl = ({ settingDirection, title, tailwindCode, gradientType }
         return (
             <div ref={ref} className="rounded-2xl mx-auto w-[95%] max-w-[490px] text-xl h-16 flex flex-col absolute -bottom-20">
                 <header className="flex justify-around w-full">
-                    <div className="text-white font-bold uppercase">{title}</div>
+                    <div className="text-white font-semibold uppercase">{title}</div>
                     <div className="text-white flex gap-4 items-center">
                         <div onClick={() => tailwindCode()} className="cursor-pointer group bg-[rgba(255,255,255,0.1)] p-[7px] rounded-xl">
                             {tailwindCSS}
